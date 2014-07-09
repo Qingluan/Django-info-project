@@ -72,4 +72,9 @@ sub todayMission{
 $arg eq "-c"  ? &createWorkDoc(@ARGV): findLast  @ARGV ;
 
 # $_ = &createWorkDoc("ios","zhangyang","qingluan");
+<<<<<<< HEAD
 #safasgasfjl alsfnjasiofj as
+=======
+
+printf("fuck!\n");
+>>>>>>> d586610bf9eeacedcfe9ad588f03c349605ee4fe
