@@ -24,7 +24,12 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+##   templates path
+#  
+TEMPLATE_DIRS = [os.path.join(BASE_DIR,'main/templates')]
+
 ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -36,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # my app #
     'main',
 )
 
@@ -81,3 +87,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+if __name__ == "__main__":
+    print "Base dir ; {}".format(BASE_DIR)
+    
